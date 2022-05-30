@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        numbers = [2, 4, 9, 2, 0, 16, 24];
+        function showArr() {
+            document.getElementById("showsarr").innerHTML = numbers;
+        }
+        function showL() {
+            document.getElementById("showLarge").innerHTML = Math.max(...numbers);
+        }
+        function showS() {
+            document.getElementById("showsmall").innerHTML = Math.min(...numbers);
+        }
+    </script>
+</head>
+
+<body bgcolor="#F7F1EA">
+    <div class="main">
+        <div id="showsarr" class="div1">
+            <label id="one">Input Array</label>
+        </div>
+        <div id="showLarge" class="div1">
+            <label id="one">Large Number</label>
+        </div>
+        <div id="showsmall" class="div1">
+            <label id="one">Small umber</label>
+        </div>
+        <button class='btn' onclick="showL()">Show Largest</button>
+        <button class="btn" onclick="showS()">Show Smallest</button>
+        <button class="btn1" onclick="showArr()">Show Array</button>
+    </div>
+</body>
+
+</html>
